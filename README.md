@@ -1,5 +1,5 @@
 # Responsive Background Images
-_Lightweight (only 2kb minified) vanilla JS plugin for loading dynamic background images. Useful for cases when the background source is set dynamically by back-end integration (e.g. CMS, Ajax calls, ...). Works out of the box with Bootstrap 3.x+._
+_Lightweight (only 2kb minified) vanilla JS plugin for loading dynamic background images. Useful for cases when the background source is set dynamically by back-end integration (e.g. CMS, Ajax calls, ...). Works out of the box with Bootstrap 4.x+._
 
 ##Demo
 
@@ -33,7 +33,8 @@ _**The class and data attributes are required**_
   data-xs="img/xs.jpg" 
   data-sm="img/sm.jpg" 
   data-md="img/md.jpg" 
-  data-lg="img/lg.jpg">
+  data-lg="img/lg.jpg" 
+  data-lg="img/xl.jpg">
 </div>
 
 ```
@@ -51,7 +52,7 @@ The script initializes automatically on load and adds a resize handler that sets
 
 
 ```
-envs: ['xs', 'sm', 'md', 'lg'],
+envs: ['xs', 'sm', 'md', 'lg', 'xl'],
 selector: '.bg-responsive',
 interval: 250
 ```

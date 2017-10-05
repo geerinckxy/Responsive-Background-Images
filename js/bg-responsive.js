@@ -32,7 +32,7 @@
 
     // Default settings
     var defaults = {
-        envs: ['xs', 'sm', 'md', 'lg'],
+        envs: ['xs', 'sm', 'md', 'lg', 'xl'],
         selector: '.bg-responsive',
         interval: 250
     };
@@ -185,7 +185,7 @@
             env = defaults.envs[i];
 
             // Add classes
-            temp.className = "hidden-" + env;
+            temp.className = "d-" + env + "-none";
 
             // Found breakpoint
             // IE 9 Returns the document.body instead(?)

@@ -1,6 +1,6 @@
 /**
  *
- * Get Bootstrap Breakpoint v1.01
+ * Get Bootstrap Breakpoint v1.02 for Bootstrap 4
  *
  * By Robert Nurijanyan
  * http://www.webatvantage.be/nl/home
@@ -32,7 +32,7 @@
 
     // Default settings
     var defaults = {
-        envs: ['xs', 'sm', 'md', 'lg', 'xl'],
+        envs: ["xs", "sm", "md", "lg", "xl"],
         selector: '.bg-responsive',
         interval: 250
     };
@@ -185,7 +185,11 @@
             env = defaults.envs[i];
 
             // Add classes
-            temp.className = "d-" + env + "-none";
+			if (env == 'xs') {
+            	temp.className = "d-none";
+			} else {
+            	temp.className = "d-" + env + "-none";
+			}
 
             // Found breakpoint
             // IE 9 Returns the document.body instead(?)
